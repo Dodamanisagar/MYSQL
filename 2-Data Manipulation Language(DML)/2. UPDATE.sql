@@ -1,6 +1,5 @@
 -- UPDATE:-
 -- Used to modify any existing values in the table, we cannot modify column names using this command.
--- SYNTAX:-
 # updating single value
 UPDATE emp
 set sal=9000
@@ -13,7 +12,7 @@ where empno=7369;
 
 
 # Updating all rows of same column
-update sagar.dept set deptno=10; -- it wont get execte because it will change all the values of the column 
+update sagar.dept set deptno=10; -- it wont get execute because it will change all the values of the column 
 -- always use where clause along with update 
 
 # BULK UPDATE
