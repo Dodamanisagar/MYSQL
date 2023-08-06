@@ -1,0 +1,54 @@
+-- CREATING TABLE:-
+-- Always first create table which doesnt contain any forign key then create other tables
+##Table : DEPT
+CREATE TABLE DEPT (
+    DEPTNO INT PRIMARY KEY,
+    DNAME VARCHAR(50),
+    LOC VARCHAR(50)
+);
+
+## Table : EMP
+CREATE TABLE EMP (
+    EMPNO INT NOT NULL unique,
+    ENAME VARCHAR(250) NOT NULL,
+    JOB VARCHAR(50),
+    HIREDATE DATE,
+    MGR INT,
+    SAL DECIMAL(10,2),
+    COMM DECIMAL(10,2),
+    DEPTNO INT,
+	PRIMARY KEY (EMPNO),
+    foreign key ( DEPTNO) references DEPT(DEPTNO)
+);
+
+-- INSERTING VALUES :-
+## Values for table DEPT
+INSERT INTO DEPT (DEPTNO, DNAME, LOC)
+VALUES
+    (10, 'ACCOUNTING', 'NEW YORK'),
+    (20, 'RESEARCH', 'DALLAS'),
+    (30, 'SALES', 'CHICAGO'),
+    (40, 'OPERATIONS', 'BOSTON');
+
+##Values for Table EMP
+INSERT INTO EMP (EMPNO, ENAME, JOB, HIREDATE, MGR, SAL, COMM, DEPTNO)
+VALUES
+    (7369, 'SMITH', 'CLERK', '1980-12-17', 7902, 800, NULL, 20),
+    (7499, 'ALLEN', 'SALESMAN', '1981-02-20', 7698, 1600, 300, 30),
+    (7521, 'WARD', 'SALESMAN', '1981-02-22', 7698, 1250, 500, 30),
+    (7566, 'JONES', 'MANAGER', '1981-04-02', 7839, 2975, NULL, 20),
+    (7654, 'MARTIN', 'SALESMAN', '1981-09-28', 7698, 1250, 1400, 30),
+    (7698, 'BLAKE', 'MANAGER', '1981-05-01', 7839, 2850, null, 30),
+    (7782, 'CLARK', 'MANAGER', '1981-06-09', 7839, 2450, null, 10),
+    (7788, 'SCOTT', 'ANALYST', '1987-04-19', 7566, 3000, null, 20),
+    (7839, 'KING', 'PRESIDENT', '1981-11-17', NULL, 5000, null, 10),
+    (7844, 'TURNER', 'SALESMAN', '1981-09-08', 7698, 1500, 0, 30),
+    (7876, 'ADAMS', 'CLERK', '1987-05-23', 7788, 1100, null, 20),
+    (7900, 'JAMES', 'CLERK', '1981-12-03', 7698, 950, null, 30),
+    (7902, 'FORD', 'ANALYST', '1981-12-03', 7566, 3000, null, 20),
+    (7934, 'MILLER', 'CLERK', '1982-01-23', 7782, 1300, NULL, 10);
+
+ 
+
+
+
