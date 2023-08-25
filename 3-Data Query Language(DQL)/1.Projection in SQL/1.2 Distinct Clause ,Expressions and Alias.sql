@@ -23,37 +23,37 @@ Example- 1) full_name or "full name"
 SELECT distinct ENAME
 FROM EMP;
 
--- WAQTD all unique jobs presents in emp table
+-- 15)WAQTD all unique jobs presents in emp table
 SELECT DISTINCT JOB
 FROM EMP;
 
--- 5)WAQTD distinvct deptno and jobs
+-- 16)WAQTD distinvct deptno and jobs
 SELECT DISTINCT DEPTNO,JOB
 FROM EMP;
 
--- 16)WAQTD name and annual salary of the employee
+-- 17)WAQTD name and annual salary of the employee
 SELECT ENAME,SAL*12
 FROM EMP;
 
--- 17)WAQTD all the details of the employees along with annual salary
+-- 18)WAQTD all the details of the employees along with annual salary
 SELECT EMPNO,ENAME,JOB,HIREDATE,MGR,SAL,COMM,DEPTNO,SAL*12
 FROM EMP;
 
 SELECT EMP.*,SAL*12
 FROM EMP;
 
--- WAQTD name and salary with a hike of 20%
+-- 19)WAQTD name and salary with a hike of 20%
 SELECT ENAME,SAL+SAL*(20/100)
 FROM EMP;
 
 SELECT ENAME,SAL*1.20
 FROM EMP;
 
--- 18)WAQTD name and salary of an employee with a deduction of 10%
+-- 20)WAQTD name and salary of an employee with a deduction of 10%
 SELECT ENAME,SAL-SAL*(10/100)
 FROM EMP;
 
--- 19)WAQTD annual salary for all the employees
+-- 21)WAQTD annual salary for all the employees
 SELECT SAL*12 ANNUAL_SALARY
 FROM EMP;
 
@@ -66,27 +66,27 @@ FROM EMP;
 SELECT SAL*12  "ANNUAL SALARY"
 FROM EMP;
 
--- 20)WAQTD name and salary with deduction 32%
+-- 22)WAQTD name and salary with deduction 32%
 SELECT ENAME,SAL-SAL*(32/100) DEDUCTION
 FROM EMP;
 
--- 21)WAQTD name and job for all the employees with their half term salary
+-- 23)WAQTD name and job for all the employees with their half term salary
 SELECT EMP.*,SAL*6
 FROM EMP;
 
--- 22)WAQTD all the details of the employees along with an annual bonus of 2000
+-- 24)WAQTD all the details of the employees along with an annual bonus of 2000
 SELECT EMP.*, SAL*12+2000 ANNUAL_BONUS
 FROM EMP;
 
--- 23) WAQTD name and salary with monthly hike of 50
+-- 25) WAQTD name and salary with monthly hike of 50
 SELECT ENAME,SAL,SAL+SAL*1.5 MONTHLY_HIKE
 FROM EMP;
 
--- 24)WAQTD total salary given to each employee (sal+comm)
+-- 26)WAQTD total salary given to each employee (sal+comm)
 SELECT SAL,SAL+COMM TOTAL_SAL
 FROM EMP;
 
--- 25) WAQTD name and designation along with 100 penalty in salary
+-- 27) WAQTD name and designation along with 100 penalty in salary
 SELECT ENAME,JOB,SAL-100 SAL_AFTER_PENALTY
 FROM EMP;
 
