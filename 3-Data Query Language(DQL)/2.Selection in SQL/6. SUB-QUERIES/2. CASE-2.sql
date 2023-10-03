@@ -1,6 +1,6 @@
 /*
 *case-2:-
---> Whenever the data to be selected and the condition to be executed are resent in different tables we use sub query.alter
+--> Whenever the data to be selected and the condition to be executed are Present in different tables we use sub query.alter
 
 */
 
