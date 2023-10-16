@@ -1,7 +1,13 @@
 /*LEFT Join:-
 -- Used to obtain all the records of left table and only matching records of right table
--- Table which is mentioned in from clause will be the left table while using left join.
-*/
+SELECT 
+    select_list
+FROM
+    t1
+LEFT JOIN t2 ON 
+    join_condition;
+-- In the above syntax, t1 is the left table and t2 is the right table.
+-- The join_condition specifies the rule for matching rows from both tables.*/
  
  -- WAQTD names and dnames of all the employees even though the employees dont work in any dept
  SELECT ENAME,DNAME
