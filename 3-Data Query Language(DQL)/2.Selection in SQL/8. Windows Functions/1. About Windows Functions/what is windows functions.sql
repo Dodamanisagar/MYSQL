@@ -1,5 +1,4 @@
-/*
-## Windows Functions :-
+/*Windows Functions :-
 -- Window functions give you access to features like advanced analytics and data manipulation without the need to write complex queries.
 
 *Different Types of Window Functions:-
