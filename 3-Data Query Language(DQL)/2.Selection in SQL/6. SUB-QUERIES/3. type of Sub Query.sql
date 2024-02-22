@@ -15,11 +15,11 @@ NOTE:-
 
 *Sub Query Operators:
 1. ALL:
-➤ "It is special Operator used along with a relational Operator (>,<,>=,=) to compare the values present at the RHS ".
+➤ "It is special Operator used along with a relational Operator (>,<,=>,=<) to compare the values present at the RHS ".
 ➤ ALL Operator returns true if all the values at the RHS have satisfied the condition.
 
 2. ANY:
-➤ "It is special Operator used along with a relational Operator (>,<,>=, <<=) to compare the values present at the RHS".
+➤ "It is special Operator used along with a relational Operator (>,<,=<,=>) to compare the values present at the RHS".
 ➤ ANY Operator returns true if one of the values at the RHS have satisfied the condition.
 
 */
