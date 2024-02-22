@@ -14,7 +14,7 @@ WORKING PRINCIPLE-
 --> Whenever we have UNKNOWN present in the question we use sub query to find the unknown.
 
 *case-2:-
---> Whenever the data to be selected and the condition to be executed are resent in different tables we use sub query.alter
+--> Whenever the data to be selected and the condition to be executed are present in different tables we use sub query.
 
 *NOTE:-
 *In the Inner query/ sub query we cannot select more than one column
