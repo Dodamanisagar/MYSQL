@@ -62,7 +62,7 @@ from employees
 where salary<(select max(salary)-- 1st highest salary
 			  from employees);
        
-       
+ -- ------------------------------------------------------      
 -- 3. Find N'th Highest Salary using sub queries:-
 select salary
 from  (select distinct salary
@@ -72,7 +72,7 @@ from  (select distinct salary
 order by salary
 limit 1;
 
-
+-- ---------------------------------------------------------
 -- 4. Find N'th Highest Salary using CTE :-
 with highest_sal as
 (
@@ -355,7 +355,7 @@ ORDER BY HireDate DESC;
 
 -- -------------------------------------------------------------
 
--- 12.Write a sql query to transpose rows to columns.
+-- 13.Write a sql query to transpose rows to columns.
 Create Table Countries
 (
  Country varchar(50),
@@ -393,7 +393,7 @@ GROUP BY
     Country;
     
 -- ------------------------------------------------------------------------
--- 13.Write a SQL query to retrieve rows that contain only numerical data.
+-- 14.Write a SQL query to retrieve rows that contain only numerical data.
 
 Create Table TestTable
 (
@@ -420,7 +420,7 @@ FROM TestTable
 WHERE CAST(Value AS UNSIGNED)!= 0;
 
 -- -------------------------------------------
--- 14.write a SQL Query to get the name of the Department that has got the maximum number of Employees.
+-- 15.write a SQL Query to get the name of the Department that has got the maximum number of Employees.
 select * from mysql_tutorial.dept;
 select * from mysql_tutorial.emp;
 
@@ -430,7 +430,7 @@ inner join mysql_tutorial.emp using(deptno)
 group by dname
 order by count(*) desc;
 -- -----------------------------------------
--- 15.Sql query to select all names that start with a given letter without like operator
+-- 16.Sql query to select all names that start with a given letter without like operator
 
 SELECT *
 FROM mysql_tutorial.emp
